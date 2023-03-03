@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort Project</title>
+    <style>
+h1{
+font-size: 40px;
+color: cornflowerblue;
+}
+h3{
+font-size: 30px;
+}
+    </style>
+</head>
+<body>
+  <h1>
+    <strong> SELECTED SORT</strong>
+</h1>
+  <h3>Soru 1: [22,27,16,2,18,6] -> Insertion Sort
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.</h3>
+  <ul>
+    <li>1. Adım: [22,|27,16,2,18,6] --> 22 sayısı, 27 ile kıyaslanır. Bu durumda 22 sayısı 27 den küçük olduğu için diğer sayıya geçilir.</li>
+    <li>2. Adım:** [22,27|16,2,18,6] --> 27 sayısı, 16 ile kıyaslanır. 16 sayısı sıralanmış tüm sayılarla kıyaslandıktan sonra en küçüğü olduğu için başa yazılır. Son durum: [16,22,27|,2,18,6] olur.</li>
+    <li>3. Adım:** [16,22,27|,2,18,6] --> 27 sayısı, 2 ile kıyaslanır. 2 sayısı sıralanmış tüm sayılarla kıyaslandıktan sonra en küçüğü olduğu için başa yazılır. Son durum: [2,,16,22,27|,18,6] olur.</li>
+    <li>4. Adım:** [2,16,22,27|,18,6] --> 27 sayısı, 18 ile kıyaslanır. 18 sayısı, 16 dan büyük olduğu için 16 nın sağ tarafına yazılır. Son durum: [2,16,18,22,27|,6] olur.</li>
+    <li>5. Adım:** [2,16,18,22,27|,6] --> 27 sayısı, 6 ile kıyaslanır. 6 Sayısı, 2 den büyük olduğu için 2 nin sağ tarafına yazılır. Son durum: [2,6,16,18,22,27] olur.
+Insortion Sort ile sıralanmış listenin son hali:</li>
+  </ul>
+<p>Insortion Sort ile sıralanmış listenin son hali:</p>
+<li>[2,6,16,18,22,27]
+'dir.</li>
+
+
+
+<h3>Big-O gösterimini yazınız.</h3>
+<p>Insortion Sort Big-O gösterimi: O(n²) dir.</p>
+
+
+<h3>Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız</h3>
+<p>Dizi sıralandıktan sonra 18 sayısı, listenin ortasında bulunmaktadır. Bu durumdan dolayı Time Complexity olarak Average Case kapsamına girmektedir.</p>
+
+<h1>Soru 2: [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.</h1>
+<ol>
+    <li>Adım: [7,3,5,8,2,9,4,15,6] --> [3,7,5,8,2,9,4,15,6]</li>
+    <li>Adım:** [3,7,5,8,2,9,4,15,6] --> [3,5,7,8,2,9,4,15,6]</li>
+    <li>Adım:** [3,5,7,8,2,9,4,15,6] --> [3,5,7,8,2,9,4,15,6]</li>
+    <li>Adım:** [3,5,7,8,2,9,4,15,6] --> [2,3,5,7,8,9,4,15,6]
+    </li>
+</ol>
+
+</body>
+</html>
